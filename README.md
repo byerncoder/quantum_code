@@ -30,19 +30,7 @@ quingo的库中有传统计算机模拟量子环境的包
 
 ### 量子编程环境
 
-#### 国产
 
-国产量子编程语言：
-
-- quingo（同时支持eQASM指令集和QCIS指令集）
-- isq-core（只支持eQASM）
-
-国产量子计算机指令集：
-- QCIS
-
-国产量子计算云平台：
-
-目前仅有12比特的真量子计算机
 
 #### 其他
 
@@ -54,8 +42,8 @@ IBM的量子计算机平台：https://lab.quantum-computing.ibm.com
 
 | 量子计算平台                                                 | 量子编程语言/sdk                                             | 文档                                                         | 对接传统语言                             | 备注                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------- | ------------------------------------------------------------ |
-| ![localeI18.QuantumPlatform](README.assets/d2c72bf32e80412eab678d68d2947914.png)[科大国盾](https://quantumcomputer.ac.cn/index.html) | quingo![9086150 quingo 1641482586](README.assets/9086150_quingo_1641482586.png)<br />isq-core | [Quingo (gitee.io)](https://quingo.gitee.io/docs/)<br />[安装和使用 - isQ-core python包使用文档 (arclightquantum.com)](http://www.arclightquantum.com/isq-core/) | quingo: python/C++<br />isq-core: python | 底层指令集为qcis<br />VSCode中有quingo和isq-core的插件支持<br />注意isq和isq-core不同,只有isq-core对接了qcis指令集 |
-| ![img](README.assets/credits-imageresMode=sharp2&op_usm=1.5,0.png)[Azure Quantum - 量子云计算服务  Microsoft Azure](https://azure.microsoft.com/zh-cn/products/quantum/) | Q#<br />![Plugins and ecosystem — PennyLane](README.assets/qiskit_logo_small.png)<br />![Cirq - Quantum: Machine Learning & Analytics](https://ml2quantum.com/wp-content/uploads/2020/05/2566b800-6601-11e9-9f2d-36d3354da949.png) | [Q# 程序的运行方式 - Azure Quantum  Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/quantum/user-guide/host-programs?tabs=tabid-python) | python                                   | 可以在visual studio的扩展模块中获得Q#                        |
-|                                                              |                                                              |                                                              | python                                   |                                                              |
-|                                                              |                                                              |                                                              |                                          |                                                              |
-
+| ![localeI18.QuantumPlatform](README.assets/d2c72bf32e80412eab678d68d2947914.png)[科大国盾](https://quantumcomputer.ac.cn/index.html) | ![9086150 quingo 1641482586](README.assets/9086150_quingo_1641482586.png)quingo<br />isq-core | [Quingo (gitee.io)](https://quingo.gitee.io/docs/)<br />[安装和使用 - isQ-core python包使用文档 (arclightquantum.com)](http://www.arclightquantum.com/isq-core/) | quingo: python/C++<br />isq-core: python | 底层指令集为qcis<br />VSCode中有quingo和isq-core的插件支持<br />注意isq和isq-core不同,只有isq-core对接了qcis指令集<br />quingo同时支持eQASM指令集和QCIS指令集<br />isq-core只支持eQASM<br />该平台目前只开放12比特的量子计算机,支持图形化搭建量子门电路 |
+| ![img](README.assets/credits-imageresMode=sharp2&op_usm=1.5,0.png)[Azure Quantum - 量子云计算服务  Microsoft Azure](https://azure.microsoft.com/zh-cn/products/quantum/) | Q#<br />![Plugins and ecosystem — PennyLane](README.assets/qiskit_logo_small.png)<br />![Cirq - Quantum: Machine Learning & Analytics](README.assets/2566b800-6601-11e9-9f2d-36d3354da949.png) | [Q# 程序的运行方式 - Azure Quantum  Microsoft Learn](https://learn.microsoft.com/zh-cn/azure/quantum/user-guide/host-programs?tabs=tabid-python)<br />[Qiskit documentation](https://qiskit.org/documentation/)<br />[Cirq Google Quantum AI](https://quantumai.google/cirq) | python                                   |                                                              |
+| ![img](README.assets/thid=ODLS.10140edf-ed22-413a-b206-1a1114760d20&w=32&h=32&o=6&pid=13.png)[Quantum Lab - IBM Quantum](https://quantum-computing.ibm.com/lab) | ![Plugins and ecosystem — PennyLane](README.assets/qiskit_logo_small.png) | [Qiskit documentation](https://qiskit.org/documentation/)    | python                                   | 进入该平台时不科学上网会报错                                 |
+| ![uTools_1681638397635](README.assets/uTools_1681638397635.png)[Google Quantum AI](https://quantumai.google/) | ![Cirq - Quantum: Machine Learning & Analytics](README.assets/2566b800-6601-11e9-9f2d-36d3354da949.png)<br />![OpenFermion 的图像结果](README.assets/OIP.qXYY3inJbVrLSabH3sIjIAHaBIw=379&h=58&c=7&r=0&o=5&dpr=1.1&pid=1.jpeg)<br />![tensorflow quantum 的图像结果](README.assets/tensorflow quantum 的图像结果.jpeg) | [Google Quantum AI](https://quantumai.google/)               | python                                   |                                                              |
+|                                                              | ![TorchQuantum - Quantum ML System](README.assets/torchquantum_logo-300x124.jpeg) | [TorchQuantum - Quantum ML System (mit.edu)](https://qmlsys.mit.edu/torchquantum/) | python                                   |                                                              |
