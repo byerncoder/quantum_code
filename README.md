@@ -38,12 +38,12 @@ Experimental Realization of a Quantum Support Vector Machine
 
 #### 量子态
 
-量子态是描述量子系统的状态，不同于经典物理态，它满足和经典物理态本质上不同的量子态叠加原理。即如果一个量子力学系统态可能是$\vert\psi_1 \rangle$,也可能是$\vert\psi_2 \rangle$，在保持态$\vert\psi\rangle$不被破坏的情况下，没有任何物理方法能确定$\vert\psi\rangle$处于那种状态，即这时系统处于两个态的叠加态。
+量子态是描述量子系统的状态，不同于经典物理态，它满足和经典物理态本质上不同的量子态叠加原理。即如果一个量子力学系统态可能是$\lvert \psi_1 \rangle$,也可能是$\lvert \psi_2\rangle$，在保持态$\lvert \psi\rangle$不被破坏的情况下，没有任何物理方法能确定$\lvert \psi\rangle$处于那种状态，即这时系统处于两个态的叠加态。
 $$
-\vert\psi \rangle=\alpha \vert\psi_1 \rangle+\beta\vert\psi_2\rangle
+\lvert \psi \rangle=\alpha \lvert \psi_1 \rangle+\beta\lvert \psi_2\rangle
 $$
 
-$\alpha$、$\beta$是两个复常数，它们描述了系统以一定的概率（幅）处在其中每个态上。假设$\vert\psi_1\rangle$、$\vert\psi_2 \rangle$互相正交，并且都已归一化，波函数$\vert\psi\rangle$满足归一化条件要求$\left\vert \alpha \right\vert^2+\left\vert \beta \right\vert ^2=1$。
+$\alpha$、$\beta$是两个复常数，它们描述了系统以一定的概率（幅）处在其中每个态上。假设$\lvert \psi_1\rangle$、$\lvert \psi_2\rangle$互相正交，并且都已归一化，波函数$\lvert\psi\rangle$满足归一化条件要求$\lvert \alpha\rvert ^2+\lvert \beta\rvert ^2=1$。
 
 ##### 举例
 
@@ -59,7 +59,7 @@ $\alpha$、$\beta$是两个复常数，它们描述了系统以一定的概率�
 
 ##### 量子叠加态与经典波叠加态的区别
 
-对于量子叠加态，当我们对其进行测量时，测量结果是排他的，只能得到其中一个态，即一个态的存在意味着另一个不存在。并且，每次测量一个成分态都会破坏它，“坍缩”到实际测量得到的那个成分态上，无法再次利用。因此，要确定叠加态中所有成分的概率，需要对一批与叠加态完全相同的态进行多次独立的测量，每次测量都会得到其中一个成分态，而其他成分态的概率则由叠加系数的模方$\left\vert \alpha \right\vert^2$ 、$\left\vert \beta \right\vert ^2$给出。
+对于量子叠加态，当我们对其进行测量时，测量结果是排他的，只能得到其中一个态，即一个态的存在意味着另一个不存在。并且，每次测量一个成分态都会破坏它，“坍缩”到实际测量得到的那个成分态上，无法再次利用。因此，要确定叠加态中所有成分的概率，需要对一批与叠加态完全相同的态进行多次独立的测量，每次测量都会得到其中一个成分态，而其他成分态的概率则由叠加系数的模方$\lvert\alpha\rvert^2$、$\lvert\beta\rvert^2$给出。
 
 相比之下，经典波叠加态中的每个成分都是系统的一个实际存在的态，可以通过反复测量得到各种成分。
 
@@ -67,11 +67,11 @@ $\alpha$、$\beta$是两个复常数，它们描述了系统以一定的概率�
 
 #### 量子位（量子比特）
 
-在量子信息学中把两个线性独立状态的量子力学系统称为一个**量子位（qubit）**，其是量子计算机中的一个最小的存储单元。记一个量子位的两个线性独立态为$\boldsymbol{\vert 0 \rangle}$、$\boldsymbol{\vert 1 \rangle}$，根据态叠加原理，量子位可以处在叠加态：
+在量子信息学中把两个线性独立状态的量子力学系统称为一个**量子位（qubit）**，其是量子计算机中的一个最小的存储单元。记一个量子位的两个线性独立态为**$\lvert0\rangle$**、**$\lvert1\rangle$**，根据态叠加原理，量子位可以处在叠加态：
 $$
-\vert\psi\rangle=\frac{1}{\sqrt2}(\vert0\rangle+\vert1\rangle)
+\lvert\psi\rangle=\frac{1}{\sqrt2}(\lvert0\rangle+\lvert1\rangle)
 $$
-$\vert0\rangle$、$\vert1\rangle$各以相等的几率出现，所以$\vert\psi\rangle$既包含$\vert0\rangle$的信息，也包含$\vert1\rangle$的信息。
+$\lvert0\rangle$、$\lvert1\rangle$各以相等的几率出现，所以$\lvert\psi\rangle$既包含$\lvert0\rangle$的信息，也包含$\lvert1\rangle$的信息。
 
 ##### 一个物理系统能够实现（充当）一个量子位的条件
 
@@ -96,6 +96,7 @@ $\vert0\rangle$、$\vert1\rangle$各以相等的几率出现，所以$\vert\psi\
 
 &emsp;&emsp;谈论量子计算时，我们谈的是n个二态系统(qubit) ，对其执行一系列算符操作，最后执行测量。如下图，我们常常画出横着并排的n条直线，从左到右代表着时间顺序，而不同的直线代表不同的 qubit ；在这些直线上排列着各种小方块大方块还有竖线，代表着各种不同的单 qubit 或多 qubit 幺正算符，每一个幺正算符被称为一个（量子）门；人们常将一些简单的量子门组合成更复杂的量子门；整张图就被称为一个量子网络/量子电路。     
 ![量子电路](README.assets/%E9%87%8F%E5%AD%90%E7%94%B5%E8%B7%AF.jpg "量子电路")  
+
 > 一个典型的量子电路  
 
 &emsp;&emsp;人们给一些常用的量子门取了特定的名字，如：
