@@ -1,0 +1,22 @@
+// kernel.qu
+opaque H(q: qubit) : unit;
+opaque Y2P(q: qubit) : unit;
+opaque Y2M(q: qubit) : unit;
+opaque CZ(q1: qubit, q2: qubit) : unit;
+opaque measure(q: qubit) : bool;
+
+operation CNOT(q1: qubit, q2: qubit) : unit {
+    Y2M(q2);
+    CZ(q1, q2);
+    Y2P(q2);
+}
+
+operation bell_state(): unit {
+    // the qubits not declared in the operation's param must use the 'using' statement
+    using (q0: qubit, q1: qubit) {
+        H(q0);
+        CNOT(q0, q1);
+        measure(q0);
+        measure(q1);
+    }
+}
