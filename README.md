@@ -7,7 +7,7 @@
 &emsp;&emsp;本篇论文来自2015年10月的《物理评论快报》（Physical Review Letters）。  
 &emsp;&emsp;1958年为了快速发表重要的物理研究成果，美国《物理评论》主编塞缪尔•古兹密特（Sam Goudsmit）做出一个决定：将《物理评论》中的一个栏目——《给编辑的快报》——分离出来，办一份新期刊，刊名就是《物理评论快报》（Physical Review Letters）。1958年7月1日，第一期含有25篇论文的PRL正式出版，这也是世界物理学界第一份快报类期刊。到现在，它已经成为国际物理学界最权威的期刊之一。  
 &emsp;&emsp;PRL很注重文章的原创性，一些重要但是原创性不高的文章会以观点不新颖拒稿之后推荐到PR系列期刊上。而且PRL讲究理论跟实验的结合，缺一边都容易给审稿人揪住辫子不放，所以导致现在审稿越来越严，命中越来越难。按照现在网站的说法，录用率在20%的样子。实际上，在2009年前，录用率还是30%的样子的。2009年的时候，PRL决定限制文章数量，只发表那些很重要的文章。在大部分期刊选择扩张的时候，PRL反其道而行，更加严格的筛选文章的质量，让人觉得更加值得敬佩，也进一步巩固了期刊的声誉。  
-&emsp;&emsp;《物理评论快报》为中科院1区期刊，JCR分区为Q1，2022年的影响因子为9.185,且PRL在Physics and Astronomy 领域的H-index远高于其他杂志，处于统治地位。PRL是物理领域的标尺，发PRL是每个物理人的梦想。
+&emsp;&emsp;《物理评论快报》为中科院1区期刊，JCR分区为Q1，2022年的影响因子为9.185,且PRL在Physics and Astronomy 领域的H-index远高于其他杂志，处于统治地位。PRL是物理领域的标尺，发PRL是每个物理人的梦想。    
 ![物理评论快报](README.assets/prl.jpg "物理评论快报")
 
 
@@ -54,21 +54,21 @@ quingo的库中有传统计算机模拟量子环境的包
 &emsp;&emsp;人们给一些常用的量子门取了特定的名字，如：
 
 - $\sigma_x$门：  
-![$\sigma_x$门](/%E9%9D%9E%E9%97%A8.jpg "$\sigma_x$门")  
+![$\sigma_x$门](README.assets/%E9%9D%9E%E9%97%A8.jpg "$\sigma_x$门")  
 X= $\begin{pmatrix} 0&1\\
 1&0\\
 \end{pmatrix}$   
 即在单 qubit 上作用算符$\sigma_x$翻转（简单起见，以后均记做X），相当于经典中的非门。同理，还有Z门和Y\<br>门。
 
 - Hadamard 门：  
-![Hadamard 门](/Hadamard%20%E9%97%A8.jpg "Hadamard 门")   
+![Hadamard 门](README.assets/Hadamard%20%E9%97%A8.jpg "Hadamard 门")   
 H=$\frac{1}{\sqrt 2} \begin{pmatrix} 1&1\\
 1&-1\\
 \end{pmatrix}$  
 这也是一种单 qubit 门。  
 
 - 控制非(Controlled-NOT, CNOT)门：  
-  ![控制非(Controlled-NOT, CNOT)门](/%E6%8E%A7%E5%88%B6%E9%9D%9E(Controlled-NOT%2C%20CNOT)%E9%97%A8.jpg "控制非(Controlled-NOT, CNOT)门")    
+  ![控制非(Controlled-NOT, CNOT)门](README.assets/%E6%8E%A7%E5%88%B6%E9%9D%9E(Controlled-NOT%2C%20CNOT)%E9%97%A8.jpg "控制非(Controlled-NOT, CNOT)门")    
   这是一个双 qubit 门，若控制位（图中带黑点的线路）为1，则翻转受控制位（图中带十字圆圈的线路），否则不执行操作；而控制位自身始终不动。
 
 - 控制U\<br>门：
@@ -85,7 +85,7 @@ H=$\frac{1}{\sqrt 2} \begin{pmatrix} 1&1\\
 相当于没作用；而当控制位为1时，受控位作用AXSXC
 ，再加上一个整体的相位$e^{i\alpha}$
 正好就是U。  
-![控制U门](/控制U门.png "控制U门")  
+![控制U门](README.assets/控制U门.png "控制U门")  
 
 - Toffoli 门：  
 对于 CNOT 门另外一个推广的想法是，能不能实现两个门控制一个门？也就是说逻辑与操作能不能做？利用如下这个简单的事实：
@@ -94,7 +94,7 @@ H=$\frac{1}{\sqrt 2} \begin{pmatrix} 1&1\\
 ，使得$V^2=U$。  
 
 具体电路实现见下图:  
-![Toffoli 门](/Toffoli%20%E9%97%A8.png "Toffoli 门")  
+![Toffoli 门](README.assets/Toffoli%20%E9%97%A8.png "Toffoli 门")  
 控制端00输入时，什么门都没有触发，不用管；01输入时，给受控位触发两个门，和效果为零；10输入时，二号控制位翻转，触发$V^+$
 ，自身再翻转，一号控制位触发V
 ，和效果为零；11输入时，二号控制位触发V
