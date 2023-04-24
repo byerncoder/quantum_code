@@ -1,3 +1,4 @@
 [submodule "wpm_latex_paper"]
 	path = wpm_latex_paper
 	url = git@github.com:ShiWenber/wpm_latex_paper.git
+	url = https://github.com/ShiWenber/wpm_latex_paper.git
