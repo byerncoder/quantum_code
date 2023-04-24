@@ -30,7 +30,45 @@ Experimental Realization of a Quantum Support Vector Machine
   中国科学院院士，中国科学技术大学教授， 教育部长江学者特聘教授，国家杰出青年科学基金获得者，国家重大科学研究计划项目首席科学家，首批国家万人计划“中青年科技创新领军人才”入选者，新世纪百千万人才工程国家级人选。长期从事量子物理及其应用的实验研究，是国际上自旋量子计算和模拟、量子精密测量实验研究方面有突出贡献的学者之一，在包括 Science (3篇)、Nature (2 篇)、Nature 子刊(13 篇)、Phys. Rev. Lett. (34 篇)在内的国际学术期刊上发表论文 200余篇，SCI 他引 5200 余次。
 
 - 徐南阳  
-黄山青年学者”教授，理学博士，2012年毕业于中国科学技术大学，博士毕业后留任中国科学技术大学物理学院特任副教授。主要研究方向为基于电子自旋的控制和探测技术，量子计算机体系架构，量子算法等。曾在国际顶级物理学杂志Phys.Rev.Lett.（物理评论快报）上发表7篇研究论文（其中三篇为第一或通讯作者），涵盖绝热量子算法，量子模拟，量子人工智能等方面。
+  黄山青年学者”教授，理学博士，2012年毕业于中国科学技术大学，博士毕业后留任中国科学技术大学物理学院特任副教授。主要研究方向为基于电子自旋的控制和探测技术，量子计算机体系架构，量子算法等。曾在国际顶级物理学杂志Phys.Rev.Lett.（物理评论快报）上发表7篇研究论文（其中三篇为第一或通讯作者），涵盖绝热量子算法，量子模拟，量子人工智能等方面。
+
+### 题目
+
+![image-20230417141406356](README.assets/image-20230417141406356.png)
+
+> 量子支持向量机的实验实现
+
+### 摘要
+
+![image-20230417141345061](README.assets/image-20230417141345061.png)
+
+> 人工智能的基本原理是机器从以前的经验中学习并相应地做未来工作的能力。在大数据时代，经典学习机在很多实际案例中往往需要巨大的计算资源。另一方面，通过利用量子并行性，量子机器学习算法可以比经典算法快出指数级。在这里，我们演示了一个量子机器学习算法，在一个4个量子比特的NMR测试台上实现手写识别。量子机器学习标准字符字体，然后从一组有两个候选字符的字符中识别手写字符。由于人工智能的广泛重要性及其对计算资源的巨大消耗，量子加速在面对大数据的挑战时将极具吸引力。
+
+1. 介绍背景：
+
+   The fundamental principle of artificial intelligence is the ability of machines to learn from previous experience and do future work accordingly.
+
+2. 表明现在领域中的问题也是提出本论文尝试解决或者探索的问题：
+
+   In the age of big data, classical learning machines often require huge computational resources in many practical cases.
+
+3. 转折提出解决方式（on the other hand）：
+
+   The fundamental principle of artificial intelligence is the ability of machines to learn from previous experience and do future work accordingly. In the age of big data, classical learning machines often require huge computational resources in many practical cases.
+
+4. 具体实验步骤，论文具体内容：
+
+   The fundamental principle of artificial intelligence is the ability of machines to learn from previous experience and do future work accordingly. In the age of big data, classical learning machines often require huge computational resources in many practical cases.
+
+5. 重申量子计算的重要性和前景：
+
+   The fundamental principle of artificial intelligence is the ability of machines to learn from previous experience and do future work accordingly. In the age of big data, classical learning machines often require huge computational resources in many practical cases.
+
+   >NMR test bench
+   >
+   >Nuclear Magnetic Resonance (NMR) spectroscopy measurements
+   >
+   >核磁共振(NMR)波谱测量
 
 ## 量子计算基础
 
@@ -146,9 +184,8 @@ H=$\frac{1}{\sqrt 2} \begin{pmatrix} 1&1\\
 ，和效果为零；11输入时，二号控制位触发V
 ，翻转两次，一号控制位触发V
 ，最后总效果为一个U
-（在做这些讨论时，始终要记住我们是对一个一般的量子态进行操作，也就是说上面这些情况是可以相干地同时发生的。）。综上，我们实现了预期的功能。当U
-取做翻转门X
-时，我们一般将其称为 Toffli 门。
+（在做这些讨论时，始终要记住我们是对一个一般的量子态进行操作，也就是说上面这些情况是可以相干地同时发生的。)。综上，我们实现了预期的功能。当U
+取做翻转门X时，我们一般将其称为 Toffli 门。
 
 ### 量子计算的指数加速
 
@@ -165,7 +202,7 @@ H=$\frac{1}{\sqrt 2} \begin{pmatrix} 1&1\\
 >例如，一个2比特量子计算机可以同时表示00、01、10和11四个状态。这意味着在一个量子计算机中，可以同时执行多个操作，即并行计算。
 
 2. 其次，量子计算的并行加速通常适用于一些特定的问题，例如量子化学、优化问题等。而GPU的并行加速可以应用于各种计算任务，例如图像处理、机器学习等。
-3. 另一个区别是，GPU的并行加速通常是基于经典计算机的体系结构实现的，而量子计算的并行加速是基于量子计算机的体系结构实现的。
+3. 另一个区别是，GPU的并行加速通常是基于经典计算机的体系结构实现的，相对于bit位数有线性加速，如果8bit并行处理，则加速8倍，而量子计算的并行加速是基于量子计算机的体系结构实现的，相比于量子比特数有指数加速，如果8bit并行处理，则加速$2^8$。
 由于量子计算机的体系结构和经典计算机有所不同，因此量子计算的并行加速需要采用不同的算法和技术。
 例如，在量子并行算法中，可以使用Grover搜索算法和Shor算法等来实现并行加速，而在GPU并行算法中，可以使用CUDA和OpenCL等技术来实现并行加速。
 
@@ -174,8 +211,6 @@ H=$\frac{1}{\sqrt 2} \begin{pmatrix} 1&1\\
 总的来说，量子并行计算是通过利用量子叠加态的并行性来实现加速的。这种并行计算方式是传统计算机无法实现的，因此可以为某些问题提供相对于传统计算机更快的解决方案。
 
 量子计算的并行加速和GPU的并行加速都是计算领域中的重要技术，它们分别基于不同的体系结构和算法，具有不同的优势和适用范围。在实际应用中，我们可以根据具体的问题和需求选择合适的技术来实现并行加速，以提高计算效率和速度。
-
-
 
 ### 量子编程环境
 
@@ -188,3 +223,17 @@ H=$\frac{1}{\sqrt 2} \begin{pmatrix} 1&1\\
 | ![img](README.assets/thid=ODLS.10140edf-ed22-413a-b206-1a1114760d20&w=32&h=32&o=6&pid=13.png)[Quantum Lab - IBM Quantum](https://quantum-computing.ibm.com/lab) | <img src="README.assets/qiskit_logo_small.png" alt="Plugins and ecosystem — PennyLane" style="zoom:25%;" /> | [Qiskit documentation](https://qiskit.org/documentation/)    | python                                   | 进入该平台时不科学上网会报错                                 |
 | ![uTools_1681638397635](README.assets/uTools_1681638397635.png)[Google Quantum AI](https://quantumai.google/) | <img src="README.assets/2566b800-6601-11e9-9f2d-36d3354da949.png" alt="Cirq - Quantum: Machine Learning & Analytics" style="zoom:5%;" /><br /><img src="README.assets/OIP.qXYY3inJbVrLSabH3sIjIAHaBIw=379&h=58&c=7&r=0&o=5&dpr=1.1&pid=1.jpeg" alt="OpenFermion 的图像结果" style="zoom:50%;" /><br /><img src="README.assets/tensorflow_quan.jpeg" alt="tensorflow quantum 的图像结果" style="zoom:50%;" /> | [Google Quantum AI](https://quantumai.google/)               | python                                   |                                                              |
 |                                                              | <img src="README.assets/torchquantum_logo-300x124.jpeg" alt="TorchQuantum - Quantum ML System" style="zoom:25%;" /> | [TorchQuantum - Quantum ML System (mit.edu)](https://qmlsys.mit.edu/torchquantum/) | python                                   |                                                              |
+
+## 题目
+
+Quantumn Graph Neural Networks based Graph Representation
+
+## 摘要
+
+1. 背景：GAT（Graph Attention Network）是一种用于处理图结构数据的神经网络模型。与传统的图神经网络模型不同，GAT采用了注意力机制来对节点进行加权聚合，从而更好地捕捉节点之间的关系。
+2. 当前领域痛点或者需要解决的问题：然而，GAT在获得更好的特征提取效果的同时，注意力机制导致了训练速度慢的问题
+3. 我们提出的解决方法：本文利用
+
+## Introduction 汇报
+
+Graph neural network initialisation of quantum approximate optimisation
