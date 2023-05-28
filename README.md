@@ -234,6 +234,36 @@ Quantumn Graph Neural Networks based Graph Representation
 2. 当前领域痛点或者需要解决的问题：然而，GAT在获得更好的特征提取效果的同时，注意力机制导致了训练速度慢的问题
 3. 我们提出的解决方法：本文利用
 
+## References
+
+
+[1]Yao Zhang, Qiang Ni, Recent advances in quantum machine learning, Quantum Engineering, 10.1002/que2.34, 2, 1, (2020).
+
+[2]Shor PW. 1997 Polynomial-time algorithms for prime factorization and discrete logarithms on a quantum computer. SIAM J. Comput. 26, 1484–1509. (doi:10.1137/S0097539795293172) Crossref, ISI, Google Scholar
+
+[3]Van Dam W, Hallgren S, Ip L. 2006 Quantum algorithms for some hidden shift problems. SIAM J. Comput. 36, 763–778. (doi:10.1137/S009753970343141X) Crossref, ISI, Google Scholar
+
+[4]Hallgren S. 2007 Polynomial-time quantum algorithms for Pell’s equation and the principal ideal problem. J. ACM 54, 4. (doi:10.1145/1206035.1206039) Crossref, ISI, Google Scholar
+
+[5]黄一鸣, 雷航, 李晓瑜. 量子机器学习算法综述[J]. 计算机学报, 2018, 41(1): 145-163.
+
+[6]Peruš M. Neuro-quantum parallelism in brain-mind and computers[J]. Informatica, 1996, 20: 173-183.
+
+[7]Kak S (1995) On quantum neural computing. Inf Sci 83:143–163
+
+[8]Menneer T (1998) Quantum artificial neural networks. PhD thesis, University of Exeter
+
+[9]Ventura D, Martinez T (2000) Quantum associative memory. Inf Sci 124(1–4):273–296
+
+[10]Kouda N, Matsui N, Nishimura H, Peper F (2003) Qubit neural network and its efficiency. In: International 
+conference on knowledge-based and intelligent information and engineering systems, pp 304–310
+
+[11]Zhou R, Zheng HY, Jiang N, Ding Q (2006) Self-organizing quantum neural network. In: Neural networks, 2006. IJCNN’06. International joint conference on IEEE, pp 1067–1072
+
+[12]de Paula Neto F M, da Silva A J, Ludermir T B, et al. Analysis of quantum neural models[C]//Proceedings of the Congresso Brasileiro de Inteligência Computacional—CBIC. 2013.
+
+[13]Abbas A, Sutter D, Zoufal C, et al. The power of quantum neural networks[J]. Nature Computational Science, 2021, 1(6): 403-409.
+
 ## Introduction 汇报
 
 Graph neural network initialisation of quantum approximate optimisation
